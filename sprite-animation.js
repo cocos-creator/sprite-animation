@@ -104,7 +104,7 @@ SpriteAnimation.prototype.play = function (animState, time) {
 
 SpriteAnimation.prototype.onLoad = function () {
     if (this.enabled) {
-        if (this.playAutomatically_ && this.defaultAnimation) {
+        if (this._playAutomatically && this.defaultAnimation) {
             var animState = this.getAnimState(this.defaultAnimation);
             this.play(animState, 0);
         }
