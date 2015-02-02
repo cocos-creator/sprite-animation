@@ -4,7 +4,7 @@ var SpriteAnimationState = require('sprite-animation-state');
 // 定义一个名叫Sprite Animation 组件
 var SpriteAnimation = Fire.define('Fire.SpriteAnimation', Fire.Component, function () {
     Fire.Component.call(this);
-        
+
     this.animations = [];
     this._nameToState = {};
     this._curAnimation = null;
@@ -22,10 +22,10 @@ SpriteAnimation.prop('defaultAnimation', null , Fire.ObjectType(SpriteAnimationC
 
 SpriteAnimation.prop('sprite1', null, Fire.ObjectType(Fire.Sprite));
 SpriteAnimation.prop('frames1', 4);
-                                          
+
 SpriteAnimation.prop('sprite2', null, Fire.ObjectType(Fire.Sprite));
 SpriteAnimation.prop('frames2', 4);
-                                          
+
 SpriteAnimation.prop('sprite3', null, Fire.ObjectType(Fire.Sprite));
 SpriteAnimation.prop('frames3', 4);
 
