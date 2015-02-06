@@ -19,7 +19,7 @@ Fire.addComponentMenu(SpriteAnimation, 'Sprite Animation');
 
 SpriteAnimation.prop('defaultAnimation', null , Fire.ObjectType(SpriteAnimationClip));
 
-SpriteAnimation.prop('Animations', [], Fire.ObjectType(SpriteAnimationClip));
+SpriteAnimation.prop('animations', [], Fire.ObjectType(SpriteAnimationClip));
 
 SpriteAnimation.prop('_playAutomatically', true, Fire.HideInInspector);
 SpriteAnimation.getset('playAutomatically',

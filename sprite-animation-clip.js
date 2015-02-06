@@ -29,12 +29,9 @@ SpriteAnimationClip.StopAction = (function (t) {
 /// The structure to descrip a frame in the sprite animation clip
 // ------------------------------------------------------------------
 
-var FrameInfo = Fire.define('FrameInfo', function (_sprite, _frames) {
-    //this.sprite = _sprite;  // the texture info used in this frame
-    //this.frames = _frames;  // frame count
-
-}).prop('sprite', null, Fire.ObjectType(Fire.Sprite))
-  .prop('frames', 0, Fire.Integer);
+var FrameInfo = Fire.define('FrameInfo', null)
+                    .prop('sprite', null, Fire.ObjectType(Fire.Sprite))
+                    .prop('frames', 0, Fire.Integer);
 
 ///< the list of frame info
 // to do
