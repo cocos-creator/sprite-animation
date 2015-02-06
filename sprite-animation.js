@@ -17,26 +17,9 @@ var SpriteAnimation = Fire.define('Fire.SpriteAnimation', Fire.Component, functi
 
 Fire.addComponentMenu(SpriteAnimation, 'Sprite Animation');
 
-//SpriteAnimation.prop('Animations', []);
 SpriteAnimation.prop('defaultAnimation', null , Fire.ObjectType(SpriteAnimationClip));
 
-SpriteAnimation.prop('sprite1', null, Fire.ObjectType(Fire.Sprite));
-SpriteAnimation.prop('frames1', 4);
-
-SpriteAnimation.prop('sprite2', null, Fire.ObjectType(Fire.Sprite));
-SpriteAnimation.prop('frames2', 4);
-
-SpriteAnimation.prop('sprite3', null, Fire.ObjectType(Fire.Sprite));
-SpriteAnimation.prop('frames3', 4);
-
-SpriteAnimation.prop('sprite4', null, Fire.ObjectType(Fire.Sprite));
-SpriteAnimation.prop('frames4', 4);
-
-SpriteAnimation.prop('sprite5', null, Fire.ObjectType(Fire.Sprite));
-SpriteAnimation.prop('frames5', 4);
-
-SpriteAnimation.prop('sprite6', null, Fire.ObjectType(Fire.Sprite));
-SpriteAnimation.prop('frames6', 4);
+SpriteAnimation.prop('animations', [], Fire.ObjectType(SpriteAnimationClip));
 
 SpriteAnimation.prop('_playAutomatically', true, Fire.HideInInspector);
 SpriteAnimation.getset('playAutomatically',
@@ -49,19 +32,6 @@ SpriteAnimation.getset('playAutomatically',
 );
 
 SpriteAnimation.prototype.getAnimState = function (animClip) {
-    animClip.frameInfos = [];
-    var frameInfo = new SpriteAnimationClip.FrameInfo(this.sprite1, this.frames1);
-    animClip.frameInfos.push(frameInfo);
-    frameInfo = new SpriteAnimationClip.FrameInfo(this.sprite2, this.frames2);
-    animClip.frameInfos.push(frameInfo);
-    frameInfo = new SpriteAnimationClip.FrameInfo(this.sprite3, this.frames3);
-    animClip.frameInfos.push(frameInfo);
-    frameInfo = new SpriteAnimationClip.FrameInfo(this.sprite4, this.frames4);
-    animClip.frameInfos.push(frameInfo);
-    frameInfo = new SpriteAnimationClip.FrameInfo(this.sprite5, this.frames5);
-    animClip.frameInfos.push(frameInfo);
-    frameInfo = new SpriteAnimationClip.FrameInfo(this.sprite6, this.frames6);
-    animClip.frameInfos.push(frameInfo);
 
     this._spriteRenderer = this.entity.getComponent(Fire.SpriteRenderer);
 
