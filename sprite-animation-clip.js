@@ -21,7 +21,7 @@ SpriteAnimationClip.StopAction = (function (t) {
     t[t.DoNothing = 0] = 'DoNothing';         // do nothing
     t[t.DefaultSprite = 1] = 'DefaultSprite'; // set to default sprite when the sprite animation stopped
     t[t.Hide = 2] = 'Hide';                   // hide the sprite when the sprite animation stopped
-    t[t.PingPong = 3] = 'PingPong';           // destroy the GameObject the sprite belongs to when the sprite animation stopped
+    t[t.Destroy = 3] = 'Destroy';             // destroy the entity the sprite belongs to when the sprite animation stopped
     return t;
 })({});
 
