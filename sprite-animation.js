@@ -62,7 +62,6 @@ SpriteAnimation.prototype.init = function () {
 };
 
 SpriteAnimation.prototype.play = function (animState, time) {
-    console.log('play');
     this._curAnimation = animState;
     if (this._curAnimation !== null) {
         this._curIndex = -1;
