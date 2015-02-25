@@ -2,7 +2,6 @@
 // 动画剪辑
 
 var SpriteAnimationClip = Fire.extend('Fire.SpriteAnimationClip', Fire.CustomAsset, function () {
-    Fire.CustomAsset.call(this);
     this._frameInfoFrames = null; // the array of the end frame of each frame info
 });
 
