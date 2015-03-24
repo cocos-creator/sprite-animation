@@ -67,11 +67,17 @@ SpriteAnimation.prototype.isPlaying = function (name) {
 
 /**
  * play Animation
- * @param {SpriteAnimationState} [animState] - The animState of the SpriteAnimationState
+ * @param {SpriteAnimationState} [animState or animName] - The animState of the SpriteAnimationState
  * @param {SpriteAnimationState} [animState] - The time of the animation time
  */
 SpriteAnimation.prototype.play = function (animState, time) {
-    this._curAnimation = animState || new SpriteAnimationState(this.defaultAnimation);
+    if (typeof animState === 'string') {
+        this._curAnimation = this.getAnimState(animState);
+    }
+    else {
+        this._curAnimation = animState || new SpriteAnimationState(this.defaultAnimation);
+    }
+
     if (this._curAnimation !== null) {
         this._curIndex = -1;
         this._curAnimation.time = time || 0;
