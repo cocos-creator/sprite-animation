@@ -67,7 +67,7 @@ SpriteAnimation.prototype.isPlaying = function (name) {
 
 /**
  * play Animation
- * @param {SpriteAnimationState} [animState or animName] - The animState of the SpriteAnimationState
+ * @param {SpriteAnimationState} [animState|animName] - The animState of the SpriteAnimationState
  * @param {SpriteAnimationState} [animState] - The time of the animation time
  */
 SpriteAnimation.prototype.play = function (animState, time) {
