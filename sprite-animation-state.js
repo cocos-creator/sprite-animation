@@ -33,7 +33,7 @@ var SpriteAnimationState = function (animClip) {
 };
 
 /**
- * @returns {number} - the current frame info index.
+ * @return {number} - the current frame info index.
  */
 SpriteAnimationState.prototype.getCurrentIndex = function () {
     if (this.totalFrames > 1) {
