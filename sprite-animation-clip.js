@@ -28,7 +28,7 @@ SpriteAnimationClip.StopAction = Fire.defineEnum({
 
 var FrameInfo = Fire.define('FrameInfo')
                     .prop('sprite', null, Fire.ObjectType(Fire.Sprite))
-                    .prop('frames', 0, Fire.Integer);
+                    .prop('frames', 0, Fire.Integer_Obsoleted);
 
 ///< the list of frame info
 // to do
