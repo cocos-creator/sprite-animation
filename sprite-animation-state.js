@@ -3,6 +3,8 @@
 /**
  * The sprite animation state.
  * @class SpriteAnimationState
+ * @constructor
+ * @param {SpriteAnimationClip} animClip
  */
 var SpriteAnimationState = function (animClip) {
     if (!animClip) {
@@ -18,7 +20,7 @@ var SpriteAnimationState = function (animClip) {
      */
     this.name = animClip.name;
     /**
-     * The referenced sprite sprite animation clip
+     * The referenced sprite animation clip
      * @property clip
      * @type {SpriteAnimationClip}
      */

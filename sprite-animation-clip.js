@@ -140,9 +140,9 @@ var SpriteAnimationClip = Fire.Class({
         },
         /**
          * The frame infos in the sprite animation clips.
-         * Elements included are：[sprite:Sprite frames:Sustained how many frames]
+         * are array of {sprite: Sprite, frames: Sustained_how_many_frames}
          * @property frameInfos
-         * @type {function[]}
+         * @type {object[]}
          * @default []
          */
         frameInfos:{

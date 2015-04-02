@@ -37,7 +37,7 @@ var SpriteAnimation = Fire.Class({
         /**
          * The Animated clip list.
          * @property animations
-         * @type {SpriteAnimationClip}
+         * @type {SpriteAnimationClip[]}
          * @default []
          */
         animations: {
@@ -49,7 +49,7 @@ var SpriteAnimation = Fire.Class({
         /**
          * Should the default animation clip (Animation.clip) automatically start playing on startup.
          * @property playAutomatically
-         * @type {bool}
+         * @type {boolean}
          * @default true
          */
         playAutomatically: {
@@ -97,7 +97,7 @@ var SpriteAnimation = Fire.Class({
      * Indicates whether the animation is playing
      * @method isPlaying
      * @param {string} [name] - The name of the animation
-     * @return {bool}
+     * @return {boolean}
      */
     isPlaying: function(name) {
         var playingAnim = this.enabled && this._curAnimation;
@@ -107,7 +107,7 @@ var SpriteAnimation = Fire.Class({
      * Play Animation
      * @method play
      * @param {SpriteAnimationState} [animState] - The animState of the sprite Animation state or animation name
-     * @param {SpriteAnimationState} [time] - The time of the animation time
+     * @param {number} [time] - The time of the animation time
      */
     play: function (animState, time) {
         if (typeof animState === 'string') {
